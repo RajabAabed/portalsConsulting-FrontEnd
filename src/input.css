@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../dist/assets/fonts/Axiforma-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../dist/assets/fonts/Axiforma-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../dist/assets/fonts/Axiforma-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../dist/assets/fonts/Axiforma-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../dist/assets/fonts/Axiforma-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  @apply transition duration-500 delay-200 ease-in-out;
+}
+
+.navLink {
+  @apply py-3 md:py-3 px-4 md:px-3 font-Axiforma text-base text-white hover:text-secondary transition-all duration-500 delay-200 ease-in-out;
+}
+.activeLink {
+  @apply after:content-['']  after:absolute after:w-full after:h-1 after:bg-secondary after:right-0 after:bottom-[-10px] after:rounded-t-sm relative;
+}
+
+.footerLink {
+  @apply text-base font-Axiforma leading-6 text-accent hover:text-secondary hover:ps-5 transition-all duration-500 delay-200 ease-in-out after:content-[''] after:absolute after:w-4 after:h-[2px] after:bg-secondary after:left-[-20px] hover:after:left-0 after:bottom-1/2 relative after:transition-[left] after:duration-500 after:delay-200 after:ease-in-out;
+}
