@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Font Awesome-->
     <script
       src="https://kit.fontawesome.com/c150b48bd0.js"
       crossorigin="anonymous"
     ></script>
-
+    <!-- splide -->
+    <link
+      href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
     <!-- Css Files -->
     <link rel="stylesheet" href="assets/css/output.css" />
-
     <title>Portals Consulting</title>
   </head>
   <body>
@@ -20,7 +22,7 @@
       class="fixed top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm"
     >
       <nav
-        class="mt-4 relative max-w-6xl w-full bg-primary border rounded-3xl mx-2 py-2.5 md:flex md:items-center md:justify-between md:py-0 md:px-4 md:mx-auto"
+        class="mt-4 relative max-w-6xl w-full bg-white backdrop-blur-lg bg-opacity-10 rounded-3xl mx-2 py-2.5 md:flex md:items-center md:justify-between md:py-0 md:px-4 md:mx-auto transition-all duration-300 delay-75 ease-in-out"
       >
         <div class="px-4 md:px-0 flex justify-between items-center">
           <div>
@@ -96,14 +98,502 @@
             <a href="#" class="navLink">Contact Us</a>
             <a
               href="#"
-              class="navLink md:px-5 border rounded-xl border-white hover:border-secondary"
+              class="navLink md:px-5 border rounded-xl border-white hover:border-secondary-500"
               >Start a Project</a
             >
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative isolate px-6 pt-14 lg:px-8 bg-primary hero-section"
+      >
+        <div
+          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
+        <div class="mx-auto max-w-4xl py-32 sm:py-48 lg:py-48">
+          <div class="text-center">
+            <h1
+              class="leading-15 text-4xl font-bold text-white sm:text-5xl font-Axiforma"
+            >
+              Explore Innovation with Expert
+              <span class="text-secondary-500">Marketing Consulting</span>
+            </h1>
+            <p class="leading-8 mt-6 text-lg text-white font-Axiforma">
+              Unlock innovation with our AI consulting. We provide tailored
+              solutions to optimize operations and enhance decision-making,
+              helping you stay ahead in the market.
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a href="#" class="portals-btn">Get Free Consultant </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Clients Section -->
+      <section class="px-6 py-20 lg:px-32 clients-section">
+        <h2
+          class="text-primary text-xl font-Axiforma text-center font-semibold mb-7"
+        >
+          Trusted by 400+ Clients and 20 Company.
+        </h2>
+        <div
+          class="flex flex-row w-full justify-center items-center content-center"
+        >
+          <div class="w-1/5 logo">
+            <img
+              src="assets/images/clientlogo1.svg"
+              alt=""
+              class="h-32 aspect-[5/4] m-auto"
+            />
+          </div>
+          <div class="w-1/5 logo">
+            <img
+              src="assets/images/clientlogo2.svg"
+              alt=""
+              class="h-32 aspect-[5/4] m-auto"
+            />
+          </div>
+          <div class="w-1/5 logo">
+            <img
+              src="assets/images/clientlogo3.svg"
+              alt=""
+              class="h-32 aspect-[5/4] m-auto"
+            />
+          </div>
+          <div class="w-1/5 logo">
+            <img
+              src="assets/images/clientlogo4.svg"
+              alt=""
+              class="h-32 aspect-[5/4] m-auto"
+            />
+          </div>
+          <div class="w-1/5 logo">
+            <img
+              src="assets/images/clientlogo5.svg"
+              alt=""
+              class="h-32 aspect-[5/4] m-auto"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Numbers Section -->
+      <section class="px-6 py-20 lg:px-32 counter-section">
+        <div class="bg-[#838E9E] bg-opacity-5 rounded-3xl p-20">
+          <div class="flex w-full justify-center items-center mb-32">
+            <h2 class="text-primary text-5xl font-Axiforma font-bold w-2/4">
+              Why Us?
+            </h2>
+            <p class="w-2/4 text-primary font-Axiforma text-sm">
+              Globally, numerous clients have partnered with us for AI
+              consulting. Through their collaboration and our dedicated efforts,
+              we've earned several prestigious awards.
+            </p>
+          </div>
+          <div class="flex w-full justify-center items-center">
+            <div class="w-1/4 flex flex-col justify-center items-center">
+              <h3 class="text-primary font-bold font-Axiforma text-5xl">
+                <span id="counter1">108</span>
+                <span class="text-secondary-500 -ms-3">+</span>
+              </h3>
+              <p class="text-xs font-Axiforma text-primary font-semibold mt-5">
+                COMPLETED PROJECT
+              </p>
+            </div>
+            <div class="w-1/4 flex flex-col justify-center items-center">
+              <h3 class="text-primary font-bold font-Axiforma text-5xl">
+                <span id="counter2">88</span>
+                <span class="text-secondary-500 -ms-3">+</span>
+              </h3>
+              <p class="text-xs font-Axiforma text-primary font-semibold mt-5">
+                Our Client
+              </p>
+            </div>
+            <div class="w-1/4 flex flex-col justify-center items-center">
+              <h3 class="text-primary font-bold font-Axiforma text-5xl">
+                <span id="counter3">12</span>
+                <span class="text-secondary-500 -ms-3">+</span>
+              </h3>
+              <p class="text-xs font-Axiforma text-primary font-semibold mt-5">
+                Unicorn Award
+              </p>
+            </div>
+            <div class="w-1/4 flex flex-col justify-center items-center">
+              <h3 class="text-primary font-bold font-Axiforma text-5xl">
+                <span id="counter4">550</span>
+                <span class="text-secondary-500 -ms-3">+</span>
+              </h3>
+              <p class="text-xs font-Axiforma text-primary font-semibold mt-5">
+                Years of Experience
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section class="px-6 py-20 lg:px-32 services-section">
+        <div
+          class="flex w-full justify-center items-center mb-24 even:flex-row-reverse gap-32"
+        >
+          <div class="w-1/2">
+            <img
+              src="assets/images/service1.png"
+              alt=""
+              class="w-full rounded-2xl"
+            />
+          </div>
+          <div class="w-1/2">
+            <h3 class="text-primary font-Axiforma font-semibold text-2xl mb-8">
+              Impact Assessment
+            </h3>
+            <p class="text-primary font-Axiforma font-normal text-sm mb-8">
+              We specialize in providing impact assessment services that help
+              organizations measure and analyze the social, economic, and
+              environmental effects of their projects and programs.
+            </p>
+            <a href="#" class="portals-btn">Explore Now</a>
+          </div>
+        </div>
+        <div
+          class="flex w-full justify-center items-center mb-24 even:flex-row-reverse gap-32"
+        >
+          <div class="w-1/2">
+            <img
+              src="assets/images/service2.png"
+              alt=""
+              class="w-full rounded-2xl"
+            />
+          </div>
+          <div class="w-1/2">
+            <h3 class="text-primary font-Axiforma font-semibold text-2xl mb-8">
+              Digital Transformation
+            </h3>
+            <p class="text-primary font-Axiforma font-normal text-sm mb-8">
+              We offer integrated digital transformation solutions that enable
+              organizations to maximize the benefits of modern technology to
+              enhance efficiency and performance.
+            </p>
+            <a href="#" class="portals-btn">Explore Now</a>
+          </div>
+        </div>
+        <div
+          class="flex w-full justify-center items-center mb-24 even:flex-row-reverse gap-32"
+        >
+          <div class="w-1/2">
+            <img
+              src="assets/images/service3.png"
+              alt=""
+              class="w-full rounded-2xl"
+            />
+          </div>
+          <div class="w-1/2">
+            <h3 class="text-primary font-Axiforma font-semibold text-2xl mb-8">
+              Business Intelligence
+            </h3>
+            <p class="text-primary font-Axiforma font-normal text-sm mb-8">
+              We provide business intelligence services that help organizations
+              transform data into actionable insights.
+            </p>
+            <a href="#" class="portals-btn">Explore Now</a>
+          </div>
+        </div>
+        <div
+          class="flex w-full justify-center items-center mb-24 even:flex-row-reverse gap-32"
+        >
+          <div class="w-1/2">
+            <img
+              src="assets/images/service4.png"
+              alt=""
+              class="w-full rounded-2xl"
+            />
+          </div>
+          <div class="w-1/2">
+            <h3 class="text-primary font-Axiforma font-semibold text-2xl mb-8">
+              Marketing and Sales
+            </h3>
+            <p class="text-primary font-Axiforma font-normal text-sm mb-8">
+              We offer integrated marketing and sales strategies focused on
+              achieving significant growth and increasing market share.
+            </p>
+            <a href="#" class="portals-btn">Explore Now</a>
+          </div>
+        </div>
+        <div
+          class="flex w-full justify-center items-center mb-24 even:flex-row-reverse gap-32"
+        >
+          <div class="w-1/2">
+            <img
+              src="assets/images/service5.png"
+              alt=""
+              class="w-full rounded-2xl"
+            />
+          </div>
+          <div class="w-1/2">
+            <h3 class="text-primary font-Axiforma font-semibold text-2xl mb-8">
+              Knowledge Transfer
+            </h3>
+            <p class="text-primary font-Axiforma font-normal text-sm mb-8">
+              We specialize in providing knowledge transfer services aimed at
+              enhancing institutional capabilities through training and
+              development.
+            </p>
+            <a href="#" class="portals-btn">Explore Now</a>
+          </div>
+        </div>
+      </section>
+      <!-- projects Section -->
+      <section class="px-6 py-20 lg:px-32 projects-section">
+        <div class="flex w-full justify-center item-center mb-20">
+          <h2 class="text-primary font-Axiforma text-5xl font-bold w-3/5">
+            Top Projects
+          </h2>
+          <p class="text-primary font-Axiforma text-sm w-2/5">
+            Explore AI-Powered Projects Uniquely Designed to Meet Your Business
+            Needs and Drive Innovation.
+          </p>
+        </div>
+        <div class="grid grid-rows-5 grid-flow-col gap-4 w-full projects-items">
+          <div class="row-span-2">
+            <div class="h-full relative overflow-hidden rounded-2xl group">
+              <img
+                src="assets/images/service1.png"
+                alt=""
+                class="h-full object-cover group-hover:scale-110 transition-all duration-700 delay-100 ease-in-out"
+              />
+              <h3
+                class="absolute bottom-2 z-30 w-full text-white font-Axiforma text-base font-normal text-center px-3"
+              >
+                AI Based Chatbot
+              </h3>
+              <div
+                aria-hidden="true"
+                class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black opacity-60"
+              ></div>
+            </div>
+          </div>
+          <div class="row-span-3">
+            <div class="h-full relative overflow-hidden rounded-2xl group">
+              <img
+                src="assets/images/service2.png"
+                alt=""
+                class="h-full object-cover group-hover:scale-110 transition-all duration-700 delay-100 ease-in-out"
+              />
+              <h3
+                class="absolute bottom-2 z-30 w-full text-white font-Axiforma text-base font-normal text-center px-3"
+              >
+                AI Chatbot-Driven Wellness App
+              </h3>
+              <div
+                aria-hidden="true"
+                class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black opacity-60"
+              ></div>
+            </div>
+          </div>
+          <div class="row-span-3">
+            <div class="h-full relative overflow-hidden rounded-2xl group">
+              <img
+                src="assets/images/service3.png"
+                alt=""
+                class="h-full object-cover group-hover:scale-110 transition-all duration-700 delay-100 ease-in-out"
+              />
+              <h3
+                class="absolute bottom-2 z-30 w-full text-white font-Axiforma text-base font-normal text-center px-3"
+              >
+                AI-Powered Online Social Casino Gaming Platform
+              </h3>
+              <div
+                aria-hidden="true"
+                class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black opacity-60"
+              ></div>
+            </div>
+          </div>
+          <div class="row-span-2">
+            <div class="h-full relative overflow-hidden rounded-2xl group">
+              <img
+                src="assets/images/service4.png"
+                alt=""
+                class="h-full object-cover group-hover:scale-110 transition-all duration-700 delay-100 ease-in-out"
+              />
+              <h3
+                class="absolute bottom-2 z-30 w-full text-white font-Axiforma text-base font-normal text-center px-3"
+              >
+                AI-Powered Heat Tape Monitoring System
+              </h3>
+              <div
+                aria-hidden="true"
+                class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black opacity-60"
+              ></div>
+            </div>
+          </div>
+          <div class="row-span-2">
+            <div class="h-full relative overflow-hidden rounded-2xl group">
+              <img
+                src="assets/images/service5.png"
+                alt=""
+                class="h-full object-cover group-hover:scale-110 transition-all duration-700 delay-100 ease-in-out"
+              />
+              <h3
+                class="absolute bottom-2 z-30 w-full text-white font-Axiforma text-base font-normal text-center px-3"
+              >
+                A Platform for Safe Home Hunting
+              </h3>
+              <div
+                aria-hidden="true"
+                class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black opacity-60"
+              ></div>
+            </div>
+          </div>
+          <div class="row-span-3">
+            <div class="h-full relative overflow-hidden rounded-2xl group">
+              <img
+                src="assets/images/service1.png"
+                alt=""
+                class="h-full object-cover group-hover:scale-110 transition-all duration-700 delay-100 ease-in-out"
+              />
+              <h3
+                class="absolute bottom-2 z-30 w-full text-white font-Axiforma text-base font-normal text-center px-3"
+              >
+                Smart Touch Lamps
+              </h3>
+              <div
+                aria-hidden="true"
+                class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black opacity-60"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="py-20 testimonials-section splide">
+        <div class="flex w-full justify-center item-center mb-20 px-6 lg:px-32">
+          <div class="w-3/5">
+            <h2 class="text-primary font-Axiforma text-5xl font-bold mb-5">
+              What client says
+            </h2>
+            <p class="text-primary font-Axiforma text-sm">
+              Our clients are the key secret of our success.
+            </p>
+          </div>
+          <div class="w-2/5 relative">
+            <div class="splide__arrows splide__arrows--ltr">
+              <button
+                class="group splide__arrow splide__arrow--prev left-auto right-[75px] w-12 h-12 bg-[#F8F8F8] hover:bg-secondary-500 transition-all duration-500 delay-100 ease-in-out"
+                type="button"
+                aria-label="Previous slide"
+                aria-controls="splide__track"
+              >
+                <i
+                  class="fa-solid fa-arrow-left text-secondary-500 text-lg group-hover:text-white transition-all duration-500 delay-100 ease-in-out"
+                ></i>
+              </button>
+              <button
+                class="group splide__arrow splide__arrow--next w-12 h-12 bg-[#F8F8F8] hover:bg-secondary-500 transition-all duration-500 delay-100 ease-in-out"
+                type="button"
+                aria-label="Next slide"
+                aria-controls="splide__track"
+              >
+                <i
+                  class="fa-solid fa-arrow-right text-secondary-500 text-lg group-hover:text-white transition-all duration-500 delay-100 ease-in-out"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div role="group" aria-label="Testimonials">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="bg-[#F5F6F7] p-8 rounded-2xl">
+                  <div
+                    class="flex justify-start items-center w-full gap-3 mb-6"
+                  >
+                    <img
+                      src="assets/images/service2.png"
+                      alt="Avatar"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="">
+                      <h4
+                        class="font-Axiforma font-normal text-sm text-primary"
+                      >
+                        Annette Black
+                      </h4>
+                      <p
+                        class="text-accent font-Axiforma font-normal text-xs m-0"
+                      >
+                        Chief Chairman of Company
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-[#071C50] text-sm font-Axiforma font-normal">
+                    “This guy is true professional and very experienced in
+                    migration and server configuration. He was able to complete
+                    my order in time and as per agreed scope. Highly recommend!”
+                  </p>
+                  <div class="mt-5">
+                    <i class="fa-solid fa-star text-yellow-300"></i>
+                    <i class="fa-solid fa-star text-yellow-300"></i>
+                    <i class="fa-solid fa-star text-yellow-300"></i>
+                    <i class="fa-solid fa-star text-yellow-300"></i>
+                    <i class="fa-solid fa-star text-yellow-300"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="px-6 py-20 lg:px-32 contact-section bg-[#FAFBFB]">
+        <div class="flex w-full justify-center items-center gap-40">
+          <div class="w-2/4">
+            <h2 class="text-primary font-Axiforma text-4xl font-bold mb-6">
+              Hey! Tell us about your project ✋
+            </h2>
+            <p class="text-primary font-Axiforma text-sm">
+              Nullam erat nisl, ornare quis ex eu, scelerisque suscipit
+              nibh.Morbi facilisis blandit congue.
+            </p>
+          </div>
+          <div
+            class="w-2/4 bg-white p-8 rounded-2xl drop-shadow-[0_13px_40px_rgba(6,28,61,0.04)]"
+          >
+            <h3 class="text-primary font-Axiforma text-base font-semibold">
+              Write down your quote here...
+            </h3>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="bg-primary" aria-labelledby="footer-heading">
       <h2 id="footer-heading" class="sr-only">Footer</h2>
       <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
@@ -173,8 +663,11 @@
         <div
           class="flex flex-row justify-between items-center mt-8 border-t border-accent pt-8 sm:mt-10 lg:mt-10"
         >
-          <div class="flex space-x-6">
-            <a href="#" class="text-gray-400 hover:text-gray-500">
+          <div class="flex space-x-3">
+            <a
+              href="#"
+              class="text-white hover:text-secondary-500 bg-white bg-opacity-15 p-3 rounded-md"
+            >
               <span class="sr-only">Facebook</span>
               <svg
                 class="h-6 w-6"
@@ -189,7 +682,10 @@
                 />
               </svg>
             </a>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
+            <a
+              href="#"
+              class="text-white hover:text-secondary-500 bg-white bg-opacity-15 p-3 rounded-md"
+            >
               <span class="sr-only">Instagram</span>
               <svg
                 class="h-6 w-6"
@@ -204,7 +700,10 @@
                 />
               </svg>
             </a>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
+            <a
+              href="#"
+              class="text-white hover:text-secondary-500 bg-white bg-opacity-15 p-3 rounded-md"
+            >
               <span class="sr-only">X</span>
               <svg
                 class="h-6 w-6"
@@ -217,7 +716,10 @@
                 />
               </svg>
             </a>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
+            <a
+              href="#"
+              class="text-white hover:text-secondary-500 bg-white bg-opacity-15 p-3 rounded-md"
+            >
               <span class="sr-only">GitHub</span>
               <svg
                 class="h-6 w-6"
@@ -232,7 +734,10 @@
                 />
               </svg>
             </a>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
+            <a
+              href="#"
+              class="text-white hover:text-secondary-500 bg-white bg-opacity-15 p-3 rounded-md"
+            >
               <span class="sr-only">YouTube</span>
               <svg
                 class="h-6 w-6"
@@ -255,8 +760,11 @@
       </div>
     </footer>
 
+    <!-- splide Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <!-- preline JS  -->
     <script src="https://cdn.jsdelivr.net/npm/preline@2.4.1/dist/preline.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!-- Custom JS -->
+    <script type="module" src="assets/js/script.js"></script>
   </body>
 </html>
