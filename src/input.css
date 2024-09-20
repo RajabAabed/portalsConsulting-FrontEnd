@@ -39,7 +39,7 @@ body {
 }
 
 .navLink {
-  @apply py-3 md:py-3 px-4 md:px-3 font-Axiforma text-base text-white hover:text-secondary-500 transition-all duration-500 delay-100 ease-in-out;
+  @apply w-fit py-3 md:py-3 px-4 md:px-3 font-Axiforma text-base text-white hover:text-secondary-500 transition-all duration-500 delay-100 ease-in-out;
 }
 .activeLink {
   @apply after:content-['']  after:absolute after:w-full after:h-1 after:bg-secondary-500 after:right-0 after:bottom-[-10px] after:rounded-t-sm relative;

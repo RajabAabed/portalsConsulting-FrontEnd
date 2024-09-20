@@ -153,6 +153,11 @@ function sliderOption() {
     pagination: false,
     arrows: true,
     perMove: 1,
+    breakpoints: {
+      640: {
+        perPage: 1,
+      },
+    },
   });
 
   splide.mount();
