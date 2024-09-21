@@ -41,7 +41,7 @@ body {
 .navLink {
   @apply w-fit py-3 md:py-3 px-4 md:px-3 font-Axiforma text-base text-white hover:text-secondary-500 transition-all duration-500 delay-100 ease-in-out;
 }
-.activeLink {
+.navLink.active {
   @apply after:content-['']  after:absolute after:w-full after:h-1 after:bg-secondary-500 after:right-0 after:bottom-[-10px] after:rounded-t-sm relative;
 }
 
@@ -55,6 +55,10 @@ body {
 
 .portals-btn {
   @apply inline-block rounded-2xl bg-secondary-500 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-secondary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-500 transition-all duration-300 delay-75 ease-in-out;
+}
+
+.portals-secondary-btn {
+  @apply inline-block rounded-2xl bg-secondary-500 bg-opacity-20 px-6 py-3 text-base font-semibold text-secondary-600 shadow-sm hover:bg-secondary-600 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-500 transition-all duration-300 delay-75 ease-in-out;
 }
 
 @keyframes fadeInUp {
@@ -75,69 +79,14 @@ body {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.logo:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.logo:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.logo:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.logo:nth-child(4) {
-  animation-delay: 0.8s;
-}
-.logo:nth-child(5) {
-  animation-delay: 1s;
-}
-
 .services-section > div {
   opacity: 0;
-}
-
-.services-section > div:nth-child(even) img {
-  margin-left: auto;
-}
-
-.services-section > div:nth-child(odd) img {
-  margin-right: auto;
-}
-
-.services-section > div:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.services-section > div:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.services-section > div:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.services-section > div:nth-child(4) {
-  animation-delay: 0.8s;
-}
-.services-section > div:nth-child(5) {
-  animation-delay: 1s;
 }
 
 .projects-items > div {
   opacity: 0;
 }
 
-.projects-items > div:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.projects-items > div:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.projects-items > div:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.projects-items > div:nth-child(4) {
-  animation-delay: 0.8s;
-}
-.projects-items > div:nth-child(5) {
-  animation-delay: 1s;
-}
-.projects-items > div:nth-child(6) {
-  animation-delay: 1.2s;
+.projects-section > div {
+  opacity: 0;
 }

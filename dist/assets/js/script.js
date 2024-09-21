@@ -6,13 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
   changeNavOnScroll();
   servicesSectionAnimation();
   projectsSectionAnimation();
+  projectsPageAnimation();
   sliderOption();
 });
 
 function logosSectionAnimation() {
   const logos = document.querySelectorAll(".logo");
   const section = document.querySelector(".clients-section");
-
+  if (!section) {
+    return;
+  }
   const observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
@@ -28,6 +31,10 @@ function logosSectionAnimation() {
   );
 
   observer.observe(section);
+
+  logos.forEach((logo, index) => {
+    logo.style.animationDelay = `${0.2 * (index + 1)}s`;
+  });
 }
 
 function numbersSectionAnimation() {
@@ -98,12 +105,17 @@ function changeNavOnScroll() {
     updateNavOnScroll();
 
     window.addEventListener("scroll", updateNavOnScroll);
+  } else {
+    nav.classList.add("bg-primary", "shadow-lg");
+    nav.classList.remove("bg-white", "bg-opacity-10", "backdrop-blur-lg");
   }
 }
 
 function servicesSectionAnimation() {
   const sections = document.querySelectorAll(".services-section > div");
-
+  if (!sections) {
+    return;
+  }
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -120,11 +132,16 @@ function servicesSectionAnimation() {
   sections.forEach((section) => {
     observer.observe(section);
   });
+  sections.forEach((div, index) => {
+    div.style.animationDelay = `${0.2 * (index + 1)}s`;
+  });
 }
 
 function projectsSectionAnimation() {
-  const sections = document.querySelectorAll(".projects-items > div");
-
+  const sections = document.querySelectorAll(".projects-section > div");
+  if (!sections) {
+    return;
+  }
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -140,6 +157,35 @@ function projectsSectionAnimation() {
 
   sections.forEach((section) => {
     observer.observe(section);
+  });
+  sections.forEach((div, index) => {
+    div.style.animationDelay = `${0.2 * (index + 1)}s`;
+  });
+}
+
+function projectsPageAnimation() {
+  const sections = document.querySelectorAll(".projects-items > div");
+  if (!sections) {
+    return;
+  }
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in-up");
+
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+  sections.forEach((div, index) => {
+    div.style.animationDelay = `${0.2 * (index + 1)}s`;
   });
 }
 
