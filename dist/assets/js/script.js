@@ -190,7 +190,10 @@ function projectsPageAnimation() {
 }
 
 function sliderOption() {
+  const direction = document.documentElement.getAttribute("dir");
+
   var splide = new Splide(".splide", {
+    direction: direction,
     gap: "1rem",
     type: "loop",
     perPage: 4,
